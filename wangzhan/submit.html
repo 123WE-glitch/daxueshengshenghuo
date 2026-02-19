@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线投稿 - 大学生生活网 | 免费投稿平台</title>
+    <meta name="description" content="大学生生活网在线投稿平台，支持文章代发、校园投稿、活动报道等。简单快捷的投稿流程，24小时审核，专业服务。">
+    <meta name="keywords" content="在线投稿, 大学生投稿, 文章投稿, 校园投稿, 投稿平台">
+    <meta name="author" content="大学生生活网">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.daxueshengshenghuo.com/submit.html">
+    
+    <meta property="og:title" content="在线投稿 - 大学生生活网">
+    <meta property="og:description" content="简单快捷的在线投稿平台，24小时审核">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.daxueshengshenghuo.com/submit.html">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-text">大学生之家网，大学生投稿平台</div>
+                <div class="top-bar-buttons">
+                    <a href="#" class="top-bar-btn">注册</a>
+                    <a href="#" class="top-bar-btn">登录</a>
+                    <a href="submit.html" class="top-bar-btn primary">网上投稿</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <h1>大学生生活网</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="services.html">服务介绍</a></li>
+                    <li><a href="articles.html">文章列表</a></li>
+                    <li><a href="submit.html" class="active">在线投稿</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="submit-page">
+            <div class="container">
+                <h2 class="section-title">在线投稿</h2>
+                <div class="submit-container">
+                    <div class="submit-info">
+                        <h3>投稿须知</h3>
+                        <ul>
+                            <li>请确保稿件内容原创，不得抄袭</li>
+                            <li>稿件内容需符合大学生生活网主题</li>
+                            <li>支持直接输入文章内容或上传docx格式的Word文档</li>
+                            <li>配图不超过5张，超过每张加1元</li>
+                            <li><strong>基础代发服务需支付20元</strong>，请先通过微信支付给 dxsdaifa</li>
+                            <li>投稿后我们会在24小时内审核</li>
+                            <li>审核通过后立即发布</li>
+                        </ul>
+                    </div>
+                    <div class="submit-form">
+                        <form id="submissionForm">
+                            <div class="form-group">
+                                <label for="name">姓名 *</label>
+                                <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">邮箱 *</label>
+                                <input type="email" id="email" name="email" required placeholder="请输入您的邮箱">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">手机号码 *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="请输入您的手机号码">
+                            </div>
+                            <div class="form-group">
+                                <label for="wechat">微信号</label>
+                                <input type="text" id="wechat" name="wechat" placeholder="请输入您的微信号">
+                            </div>
+                            <div class="form-group">
+                                <label for="qq">QQ号</label>
+                                <input type="text" id="qq" name="qq" placeholder="请输入您的QQ号">
+                            </div>
+                            <div class="form-group">
+                                <label for="title">文章标题 *</label>
+                                <input type="text" id="title" name="title" required placeholder="请输入文章标题">
+                            </div>
+                            <div class="form-group">
+                                <label for="category">文章分类 *</label>
+                                <select id="category" name="category" required>
+                                    <option value="">请选择分类</option>
+                                    <option value="campus">校园生活</option>
+                                    <option value="study">学习经验</option>
+                                    <option value="activity">活动报道</option>
+                                    <option value="volunteer">志愿服务</option>
+                                    <option value="other">其他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="service">服务类型 *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">请选择服务类型</option>
+                                    <option value="basic">基础代发 (20元/篇)</option>
+                                    <option value="combo">组合代发 (50元/3个网站)</option>
+                                    <option value="advanced">国家级/省级代发 (面议)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="content">文章内容 *</label>
+                                <textarea id="content" name="content" rows="10" required placeholder="请输入文章内容"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="file">上传文章文件 (支持docx格式)</label>
+                                <input type="file" id="file" name="file" accept=".docx,.docx">
+                                <p class="form-hint">支持上传docx格式的Word文档</p>
+                                <div id="filePreview" class="file-preview"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="images">配图 (最多5张)</label>
+                                <input type="file" id="images" name="images" multiple accept="image/*">
+                                <p class="form-hint">超过5张图片，每张加1元</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="remark">备注</label>
+                                <textarea id="remark" name="remark" rows="3" placeholder="其他需要说明的内容"></textarea>
+                            </div>
+                            <div class="form-group payment-info">
+                                <h4>💰 投稿费用</h4>
+                                <div class="payment-details">
+                                    <p>基础代发服务：<strong>20元/篇</strong></p>
+                                    <p>支付方式：<strong>微信支付</strong></p>
+                                    <p>支付账号：<strong>dxsdaifa</strong></p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" id="paymentConfirmed" required>
+                                    <span>我已通过微信支付20元给 dxsdaifa</span>
+                                </label>
+                                <p class="form-hint">请先完成支付，然后勾选此选项才能提交稿件</p>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">提交投稿</button>
+                                <button type="reset" class="btn btn-secondary">重置表单</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 大学生生活网 版权所有</p>
+            <p>专注大学生投稿服务，助力大学生成长</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('submissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const paymentConfirmed = document.getElementById('paymentConfirmed').checked;
+            
+            if (!paymentConfirmed) {
+                alert('请先完成支付，然后勾选"我已通过微信支付20元给 dxsdaifa"选项才能提交稿件！');
+                return;
+            }
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            alert('投稿提交成功！\n\n我们会尽快审核您的稿件，请保持联系方式畅通。\n\n如有疑问，请联系：\n微信：dxsdaifa\nQQ：2912642273');
+            
+            this.reset();
+            document.getElementById('filePreview').classList.remove('active');
+            document.getElementById('filePreview').innerHTML = '';
+        });
+
+        document.getElementById('images').addEventListener('change', function(e) {
+            const files = e.target.files;
+            if (files.length > 5) {
+                alert('最多只能上传5张图片，超过5张每张加1元');
+            }
+        });
+
+        document.getElementById('file').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const filePreview = document.getElementById('filePreview');
+            
+            if (file) {
+                const fileName = file.name.toLowerCase();
+                if (!fileName.endsWith('.docx')) {
+                    alert('只支持上传docx格式的Word文档');
+                    e.target.value = '';
+                    filePreview.classList.remove('active');
+                    filePreview.innerHTML = '';
+                } else {
+                    filePreview.classList.add('active');
+                    filePreview.innerHTML = `
+                        <div class="file-name">
+                            <span>📄</span>
+                            <span>${file.name}</span>
+                        </div>
+                        <button type="button" class="remove-file" onclick="removeFile()">删除</button>
+                    `;
+                }
+            } else {
+                filePreview.classList.remove('active');
+                filePreview.innerHTML = '';
+            }
+        });
+
+        function removeFile() {
+            const fileInput = document.getElementById('file');
+            fileInput.value = '';
+            const filePreview = document.getElementById('filePreview');
+            filePreview.classList.remove('active');
+            filePreview.innerHTML = '';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文章列表 - 大学生生活网 | 大学生文章投稿</title>
+    <meta name="description" content="大学生生活网文章列表，收录各类大学生投稿文章，包括校园生活、学习经验、活动报道、志愿服务等内容。">
+    <meta name="keywords" content="大学生文章, 文章列表, 校园投稿, 学习经验, 活动报道">
+    <meta name="author" content="大学生生活网">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.daxueshengshenghuo.com/articles.html">
+    
+    <meta property="og:title" content="文章列表 - 大学生生活网">
+    <meta property="og:description" content="收录各类大学生投稿文章">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.daxueshengshenghuo.com/articles.html">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-text">大学生之家网，大学生投稿平台</div>
+                <div class="top-bar-buttons">
+                    <a href="#" class="top-bar-btn">注册</a>
+                    <a href="#" class="top-bar-btn">登录</a>
+                    <a href="submit.html" class="top-bar-btn primary">网上投稿</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <div class="logo-icon">🎓</div>
+                    <h1>大学生生活网</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="services.html">服务介绍</a></li>
+                    <li><a href="articles.html" class="active">文章列表</a></li>
+                    <li><a href="submit.html">在线投稿</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articles-hero">
+            <div class="container">
+                <h2>文章列表</h2>
+                <p>收录各类大学生投稿文章，分享校园生活与学习经验</p>
+            </div>
+        </section>
+
+        <section class="articles-content">
+            <div class="container">
+                <div class="articles-layout">
+                    <aside class="articles-sidebar">
+                        <div class="search-box">
+                            <h3>搜索文章</h3>
+                            <input type="text" id="searchInput" placeholder="输入关键词搜索...">
+                            <button onclick="searchArticles()">搜索</button>
+                        </div>
+
+                        <div class="category-filter">
+                            <h3>文章分类</h3>
+                            <ul>
+                                <li><a href="#" class="category-link active" data-category="all">全部文章</a></li>
+                                <li><a href="#" class="category-link" data-category="campus">校园生活</a></li>
+                                <li><a href="#" class="category-link" data-category="study">学习经验</a></li>
+                                <li><a href="#" class="category-link" data-category="activity">活动报道</a></li>
+                                <li><a href="#" class="category-link" data-category="volunteer">志愿服务</a></li>
+                                <li><a href="#" class="category-link" data-category="practice">社会实践</a></li>
+                                <li><a href="#" class="category-link" data-category="sports">体育健康</a></li>
+                                <li><a href="#" class="category-link" data-category="moral">德育教育</a></li>
+                                <li><a href="#" class="category-link" data-category="labor">劳动教育</a></li>
+                                <li><a href="#" class="category-link" data-category="other">其他</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="hot-articles">
+                            <h3>热门文章</h3>
+                            <ul>
+                                <li><a href="article1.html">如何高效学习，提高成绩</a></li>
+                                <li><a href="article2.html">大学生社团活动经验分享</a></li>
+                                <li><a href="article3.html">志愿服务心得体会</a></li>
+                                <li><a href="article4.html">校园生活小技巧</a></li>
+                                <li><a href="article5.html">考研备考经验总结</a></li>
+                                <li><a href="article12.html">运动之美 青春力量</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <div class="articles-main">
+                        <div class="articles-header">
+                            <h3>最新文章</h3>
+                            <div class="articles-sort">
+                                <select id="sortSelect" onchange="sortArticles()">
+                                    <option value="newest">最新发布</option>
+                                    <option value="popular">最受欢迎</option>
+                                    <option value="most-viewed">最多浏览</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="articles-grid" id="articlesGrid">
+                            <article class="article-card" data-category="study">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop" alt="如何高效学习">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">学习经验</span>
+                                        <span class="article-date">2026-02-14</span>
+                                    </div>
+                                    <h3><a href="article1.html">如何高效学习，提高成绩</a></h3>
+                                    <p>分享高效学习方法，帮助大学生提高学习效率和成绩...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 1234</span>
+                                        <span><i class="likes">👍</i> 56</span>
+                                        <span><i class="comments">💬</i> 23</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="activity">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=400&h=250&fit=crop" alt="社团活动经验">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">活动报道</span>
+                                        <span class="article-date">2026-02-13</span>
+                                    </div>
+                                    <h3><a href="article2.html">大学生社团活动经验分享</a></h3>
+                                    <p>参加社团活动的收获和经验，如何在大学期间丰富课余生活...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 987</span>
+                                        <span><i class="likes">👍</i> 45</span>
+                                        <span><i class="comments">💬</i> 18</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="volunteer">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=250&fit=crop" alt="志愿服务心得">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">志愿服务</span>
+                                        <span class="article-date">2026-02-12</span>
+                                    </div>
+                                    <h3><a href="article3.html">志愿服务心得体会</a></h3>
+                                    <p>参与志愿服务的收获和感悟，如何为社会贡献自己的力量...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 756</span>
+                                        <span><i class="likes">👍</i> 38</span>
+                                        <span><i class="comments">💬</i> 12</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="practice">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&h=250&fit=crop" alt="社会实践心得">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">社会实践</span>
+                                        <span class="article-date">2026-02-11</span>
+                                    </div>
+                                    <h3><a href="article4.html">大学生暑期社会实践心得体会</a></h3>
+                                    <p>分享暑期社会实践的收获和感悟，通过实践了解社会、锻炼自我...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 654</span>
+                                        <span><i class="likes">👍</i> 32</span>
+                                        <span><i class="comments">💬</i> 9</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="study">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop" alt="考研备考经验">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">学习经验</span>
+                                        <span class="article-date">2026-02-10</span>
+                                    </div>
+                                    <h3><a href="article5.html">考研备考经验总结</a></h3>
+                                    <p>详细总结考研备考的经验和方法，帮助学弟学妹们顺利上岸...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 543</span>
+                                        <span><i class="likes">👍</i> 28</span>
+                                        <span><i class="comments">💬</i> 7</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="other">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=400&h=250&fit=crop" alt="大学生创业经验">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">其他</span>
+                                        <span class="article-date">2026-02-09</span>
+                                    </div>
+                                    <h3><a href="article6.html">大学生创业经验分享</a></h3>
+                                    <p>分享大学生创业的经验和教训，为有创业想法的同学提供参考...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 432</span>
+                                        <span><i class="likes">👍</i> 25</span>
+                                        <span><i class="comments">💬</i> 6</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="volunteer">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4b?w=400&h=250&fit=crop" alt="以劳践心 以行育德">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">志愿服务</span>
+                                        <span class="article-date">2026-02-08</span>
+                                    </div>
+                                    <h3><a href="article7.html">以劳践心 以行育德</a></h3>
+                                    <p>以劳践心，以行育德，通过劳动教育培养大学生的品德修养...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 892</span>
+                                        <span><i class="likes">👍</i> 42</span>
+                                        <span><i class="comments">💬</i> 15</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="sports">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=250&fit=crop" alt="青春飞扬 体育筑梦">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">体育健康</span>
+                                        <span class="article-date">2026-02-18</span>
+                                    </div>
+                                    <h3><a href="article8.html">青春飞扬 体育筑梦</a></h3>
+                                    <p>青春飞扬，体育筑梦，通过体育锻炼增强体质，培养大学生的体育精神和团队协作能力...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 543</span>
+                                        <span><i class="likes">👍</i> 28</span>
+                                        <span><i class="comments">💬</i> 8</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="moral">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=400&h=250&fit=crop" alt="立德树人 品格为先">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">德育教育</span>
+                                        <span class="article-date">2026-02-19</span>
+                                    </div>
+                                    <h3><a href="article9.html">立德树人 品格为先</a></h3>
+                                    <p>立德树人，品格为先，通过德育教育培养大学生的道德品质和人格修养...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 321</span>
+                                        <span><i class="likes">👍</i> 18</span>
+                                        <span><i class="comments">💬</i> 5</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="labor">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=250&fit=crop" alt="劳动铸魂 实践育人">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">劳动教育</span>
+                                        <span class="article-date">2026-02-20</span>
+                                    </div>
+                                    <h3><a href="article10.html">劳动铸魂 实践育人</a></h3>
+                                    <p>劳动铸魂，实践育人，通过劳动教育培养大学生的实践能力和责任意识...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 287</span>
+                                        <span><i class="likes">👍</i> 15</span>
+                                        <span><i class="comments">💬</i> 4</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="labor">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=250&fit=crop" alt="劳动之光 照亮青春">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">劳动教育</span>
+                                        <span class="article-date">2026-02-20</span>
+                                    </div>
+                                    <h3><a href="article11.html">劳动之光 照亮青春</a></h3>
+                                    <p>劳动之光，照亮青春，探讨劳动教育对大学生成长的重要意义...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 256</span>
+                                        <span><i class="likes">👍</i> 12</span>
+                                        <span><i class="comments">💬</i> 3</span>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="article-card" data-category="sports">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop" alt="运动之美 青春力量">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="article-category">体育健康</span>
+                                        <span class="article-date">2026-02-21</span>
+                                    </div>
+                                    <h3><a href="article12.html">运动之美 青春力量</a></h3>
+                                    <p>运动之美，青春力量，通过体育锻炼增强体质，培养大学生的体育精神...</p>
+                                    <div class="article-stats">
+                                        <span><i class="views">👁</i> 189</span>
+                                        <span><i class="likes">👍</i> 28</span>
+                                        <span><i class="comments">💬</i> 2</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="pagination">
+                            <a href="#" class="pagination-link active">1</a>
+                            <a href="#" class="pagination-link">2</a>
+                            <a href="#" class="pagination-link">3</a>
+                            <a href="#" class="pagination-link">下一页</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 大学生生活网 版权所有</p>
+            <p>专注大学生投稿服务，助力大学生成长</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function searchArticles() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const articles = document.querySelectorAll('.article-card');
+            
+            articles.forEach(article => {
+                const title = article.querySelector('h3').textContent.toLowerCase();
+                const description = article.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                    article.style.display = 'block';
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+        }
+
+        document.querySelectorAll('.category-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelectorAll('.category-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                const category = this.dataset.category;
+                const articles = document.querySelectorAll('.article-card');
+                
+                articles.forEach(article => {
+                    if (category === 'all' || article.dataset.category === category) {
+                        article.style.display = 'block';
+                    } else {
+                        article.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        function sortArticles() {
+            const sortType = document.getElementById('sortSelect').value;
+            const grid = document.getElementById('articlesGrid');
+            const articles = Array.from(grid.querySelectorAll('.article-card'));
+            
+            articles.sort((a, b) => {
+                if (sortType === 'newest') {
+                    return b.querySelector('.article-date').textContent.localeCompare(a.querySelector('.article-date').textContent);
+                } else if (sortType === 'popular') {
+                    const likesA = parseInt(a.querySelector('.article-stats span:nth-child(2)').textContent);
+                    const likesB = parseInt(b.querySelector('.article-stats span:nth-child(2)').textContent);
+                    return likesB - likesA;
+                } else if (sortType === 'most-viewed') {
+                    const viewsA = parseInt(a.querySelector('.article-stats span:nth-child(1)').textContent);
+                    const viewsB = parseInt(b.querySelector('.article-stats span:nth-child(1)').textContent);
+                    return viewsB - viewsA;
+                }
+            });
+            
+            articles.forEach(article => grid.appendChild(article));
+        }
+
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                searchArticles();
+            }
+        });
+    </script>
+</body>
+</html>
