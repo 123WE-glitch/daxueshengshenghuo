@@ -58,7 +58,7 @@
                             <li>稿件内容需符合大学生生活网主题</li>
                             <li>支持直接输入文章内容或上传docx格式的Word文档</li>
                             <li>配图不超过5张，超过每张加1元</li>
-                            <li><strong>基础代发服务需支付20元</strong>，请先通过微信支付给 dxsdaifa</li>
+                            <li><strong>基础代发服务需支付10元</strong>，请先通过微信支付给 dxsdaifa</li>
                             <li>投稿后我们会在24小时内审核</li>
                             <li>审核通过后立即发布</li>
                         </ul>
@@ -104,7 +104,7 @@
                                 <label for="service">服务类型 *</label>
                                 <select id="service" name="service" required>
                                     <option value="">请选择服务类型</option>
-                                    <option value="basic">基础代发 (20元/篇)</option>
+                                    <option value="basic">基础代发 (10元/篇)</option>
                                     <option value="combo">组合代发 (50元/3个网站)</option>
                                     <option value="advanced">国家级/省级代发 (面议)</option>
                                 </select>
@@ -131,7 +131,7 @@
                             <div class="form-group payment-info">
                                 <h4>💰 投稿费用</h4>
                                 <div class="payment-details">
-                                    <p>基础代发服务：<strong>20元/篇</strong></p>
+                                    <p>基础代发服务：<strong>10元/篇</strong></p>
                                     <p>支付方式：<strong>微信支付</strong></p>
                                     <p>支付账号：<strong>dxsdaifa</strong></p>
                                 </div>
@@ -139,7 +139,7 @@
                             <div class="form-group">
                                 <label>
                                     <input type="checkbox" id="paymentConfirmed" required>
-                                    <span>我已通过微信支付20元给 dxsdaifa</span>
+                                    <span>我已通过微信支付10元给 dxsdaifa</span>
                                 </label>
                                 <p class="form-hint">请先完成支付，然后勾选此选项才能提交稿件</p>
                             </div>
@@ -169,7 +169,7 @@
             const paymentConfirmed = document.getElementById('paymentConfirmed').checked;
             
             if (!paymentConfirmed) {
-                alert('请先完成支付，然后勾选"我已通过微信支付20元给 dxsdaifa"选项才能提交稿件！');
+                alert('请先完成支付，然后勾选"我已通过微信支付10元给 dxsdaifa"选项才能提交稿件！');
                 return;
             }
             
